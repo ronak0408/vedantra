@@ -225,3 +225,82 @@ nav a:hover {
       font-size: 0.85rem;
       color: #666;
     }
+
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+/* Overlay container */
+#intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #2d005d, #4b0082, #1c032d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+  animation: fadeOut 2s ease forwards;
+  animation-delay: 4.5s;
+}
+
+
+/* Particles canvas */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Zoom-in title */
+.intro-title {
+  animation: zoomIn 3s ease-out forwards, glowPulse 3s infinite ease-in-out;
+
+  position: relative;
+  z-index: 2;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  background: linear-gradient(90deg, #ff8ae2, #d46fff, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0.2);
+  animation: zoomIn 3s ease-out forwards;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 25px #ff6cf9, 0 0 40px #c251ff;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 25px #ff6cf9, 0 0 40px #c251ff;
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 35px #ff6cf9, 0 0 60px #c251ff;
+  }
+}
+
+/* Animations */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
