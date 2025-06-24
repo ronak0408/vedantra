@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vedantra.ai - Interactive Front Page</title>
@@ -8,6 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <div id="intro-overlay">
+  <div id="particles-js"></div>
+  <h1 class="intro-title">Vedantra.ai</h1>
+</div>
+
+
 
 <header>
   <div class="logo">Vedantra.ai</div>
@@ -111,5 +120,66 @@
   </div>
   <div class="footer-bottom">&copy; 2025 Vedantra.ai. All rights reserved.</div>
 </footer>
+
+
+
+
+
+<script>
+  setTimeout(() => {
+    const overlay = document.getElementById("intro-overlay");
+    if (overlay) overlay.remove();
+  }, 6000);
+
+  // Particle JS configuration
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 60,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": ["#f72585", "#7209b7", "#3a0ca3"]
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.6,
+        "random": true
+      },
+      "size": {
+        "value": 3,
+        "random": true
+      },
+      "move": {
+        "enable": true,
+        "speed": 1,
+        "direction": "none",
+        "out_mode": "out"
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        }
+      },
+      "modes": {
+        "repulse": {
+          "distance": 100
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+
 </body>
 </html>
