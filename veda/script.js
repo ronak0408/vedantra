@@ -20,14 +20,38 @@
     if (overlay) overlay.remove();
   }, 6500);
 
+  const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+const closeBtn = document.getElementById('closeBtn');
 
-   function toggleMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.toggle("active");
-    }
+hamburger.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+});
 
-    function toggleDropdown(event) {
-      event.preventDefault();
-      const dropdown = document.getElementById("mobileDropdown");
-      dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
-    }               
+closeBtn.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+});
+
+
+
+  //  function openSidebar() {
+  //     const sidebar = document.getElementById("sidebar");
+  //     sidebar.classList.add("active");
+  //     sidebar.style.display = "block"
+  //     document.body.style.overflow = "hidden";
+  //   }
+
+  //   function closeSidebar() {
+  //     const sidebar = document.getElementById("sidebar");
+  //     sidebar.classList.remove("active");
+  //     document.body.style.overflow = "auto";
+  //     sidebar.style.display = "none"
+  //   }
+
+    function toggleDropdown() {
+      const dropdown = document.querySelector(".dropdown");
+      const arrow = document.getElementById("arrow");
+      dropdown.classList.toggle("show-dropdown");
+      arrow.classList.toggle("rotate");
+    }  
+    
