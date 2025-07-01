@@ -24,37 +24,62 @@
 <div class="main">
   <header>  
    <nav>
-    <div class="logo"></div>
+    <div class="logo">
+      <img src="Veda traip.png" alt="Vedantra.ai Logo">
+    </div>
     <div class="nav-links">
       <a href="#">HOME</a>
       <div class="dropdown">
         <a href="#">OUR SERVICES <i class="ri-arrow-drop-down-line"></i></a>
         <div class="dropdown-content">
-          <a href="#">Service 1</a>
-          <a href="#">Service 2</a>
-          <a href="#">Service 3</a>
-          <a href="#">Service 4</a>
+          <a href="service_web_dev.html">Web Development</a>
+          <a href="service_app_dev.html">App Development</a>
+          <a href="service_ui_ux.html">UI/UX Design</a>
+          <a href="service_maintanance_support.html">Maintanance and Support</a>
           
         </div>
       </div>
       <a href="#">PORTFOLIO</a>
       <a href="#">CONTACT US </a>
     </div>
+    <!-- <div class="hamburger" onclick="toggleMenu()">☰</div> -->
   </nav>
 
-
-
-
-  <!--  ///////////// /////                 Mobile   View      /////////////////////             -->
-
   <div class="navbar">
+<!--     
+    <div class="hamburger" id="hamburger" onclick="openSidebar()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
 
-    <!--                  Side Bar                  -->
-     <div class="hamburger" id="hamburger">
+  <div class="sidebar" id="sidebar"> -->
+    <!-- Close icon inside sidebar -->
+    <!-- <div class="close-icon" onclick="closeSidebar()">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <a href="#">Home</a>
+
+    <div class="services-toggle" onclick="toggleDropdown()">
+      Services <i id="arrow" class="fas fa-chevron-down"></i>
+    </div>
+    <div class="dropdown" id="servicesDropdown">
+      <a href="#">Web Development</a>
+      <a href="#">App Development</a>
+      <a href="#">SEO</a>
+      <a href="#">Graphic Design</a>
+    </div>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact Us</a>
+  </div> -->
+
+  <div class="hamburger" id="hamburger">
     <i class="fas fa-bars"></i>
   </div>
-      <div class="sidebar" id="sidebar">
 
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <!-- <div class="close-btn" id="closeBtn"><i class="fas fa-times"></i></div> -->
     <ul>
       <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
       <li><a href="#"><i class="fas fa-cogs"></i> Services</a></li>
@@ -62,10 +87,6 @@
       <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
   </div>
-  </div>
- 
-
-
 </header>
 
 <section class="hero">
@@ -86,42 +107,42 @@
     <h3>Our Services</h3>
     <div class="services-container">
       <div class="service-box">
-        <img src="assets/web.jpg " alt="Marketing Icon" />
-        <h3>Website Design & Development</h3>
+        <img src="icons/marketing.png" alt="Marketing Icon" />
+        <h3><a href="service_web_dev.html">Web Design & Development</a></h3>
         <p>We craft responsive, user-friendly websites that look great on all devices and deliver real results. Whether you need a personal site, business platform, or e-commerce store, we build solutions that reflect your brand and engage your audience.</p>
         <a href="#" style="color: #ccc;">Learn More ⤴</a>
       </div>
 
       <div class="service-box">
-        <img src="assets/E-commerce.jpg" alt="Development Icon" />
+        <img src="icons/development.png" alt="Development Icon" />
         <h3>E-commerce Development</h3>
         <p>We use innovative techniques to build PHP applications and solutions for all types of business. We provide development solutions as per the client’s needs and goals.</p>
         <a href="#" style="color: #ccc;">Learn More ⤴</a>
       </div>
 
       <div class="service-box">
-        <img src="assets/uiux.jpg" alt="Web Design Icon" />
-        <h3>UI/UX Design</h3>
+        <img src="icons/web-design.png" alt="Web Design Icon" />
+        <h3><a href="service_ui_ux.html">UI/UX Design</a></h3>
         <p>We use different techniques to make a website user-friendly and attractive, so that your business is visible on the Internet more efficiently.</p>
         <a href="#" style="color: #ccc;">Learn More ⤴</a>
       </div>
 
       <div class="service-box">
-        <img src="assets/Web_Maint.jpg" alt="SEO Icon" />
-        <h3>Website Maintenance & Support</h3>
+        <img src="icons/seo.png" alt="SEO Icon" />
+        <h3><a href="service_maintanance_support.html">Website Maintenance & Support</a></h3>
         <p>Optimize your website for better search engine visibility with our tailored SEO strategies.</p>
        <a href="#" style="color: #ccc;">Learn More ⤴</a>
       </div>
 
       <div class="service-box">
-        <img src="assets/SEO.jpg" alt="Ads Icon" />
+        <img src="icons/ads.png" alt="Ads Icon" />
         <h3>SEO (Search Engine Optimization)</h3>
         <p>Boost your brand visibility and sales through result-driven PPC advertising campaigns.</p>
         <a href="#" style="color: #ccc;">Learn More ⤴</a>
       </div>
 
       <div class="service-box">
-        <img src="assets/Web_host.jpg" alt="Branding Icon" />
+        <img src="icons/branding.png" alt="Branding Icon" />
         <h3>Web Hosting & Domain Services</h3>
         <p>Establish a strong brand identity that resonates with your audience and builds trust.</p>
         <a href="#" style="color: #ccc;">Learn More ⤴</a>
@@ -139,52 +160,52 @@
 
     <div class="serve-container">
       <div class="serve-box">
-        <img src="assets/serve/open-book.png" alt="Educational Icon">
+        <img src="icons/education.png" alt="Educational Icon">
         <h3>Educational</h3>
       </div>
 
       <div class="serve-box">
-        <img src="assets/serve/healthcare.png" alt="Healthcare Icon">
+        <img src="icons/healthcare.png" alt="Healthcare Icon">
         <h3>Healthcare</h3>
       </div>
 
       <div class="serve-box">
-        <img src="assets/serve/ecommerce.png" alt="E-Commerce Icon">
+        <img src="icons/ecommerce.png" alt="E-Commerce Icon">
         <h3>E-Commerce</h3>
       </div>
 
       <div class="serve-box">
-        <img src="assets/serve/flight-ticket.png" alt="Travel Icon">
+        <img src="icons/travel.png" alt="Travel Icon">
         <h3>Travel</h3>
       </div>
 
       <div class="serve-box">
-        <img src="assets/serve/house.png" alt="Real Estate Icon">
+        <img src="icons/real-estate.png" alt="Real Estate Icon">
         <h3>Real Estate</h3>
       </div>
 
       <div class="serve-box">
-        <img src="assets/serve/power.png" alt="Fitness Icon">
+        <img src="icons/fitness.png" alt="Fitness Icon">
         <h3>Fitness</h3>
       </div>
 
       <div class="serve-box">
-        <img src="assets/serve/burger.png" alt="Food Icon">
+        <img src="icons/food.png" alt="Food Icon">
         <h3>Food</h3>
       </div>
 
       <div class="serve-box">
-        <img src="assets/serve/insurance.png" alt="Finance Icon">
+        <img src="icons/finance.png" alt="Finance Icon">
         <h3>Finance & Insurance</h3>
       </div>
 
       <div class="serve-box">
-        <img src="assets/serve/vehicle.png" alt="Automotive Icon">
+        <img src="icons/automotive.png" alt="Automotive Icon">
         <h3>Automotive</h3>
       </div>
 
       <div class="serve-box">
-        <img src="assets/serve/construction.png" alt="Construction Icon">
+        <img src="icons/construction.png" alt="Construction Icon">
         <h3>Construction</h3>
       </div>
     </div>
