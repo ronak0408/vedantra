@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
@@ -7,324 +8,317 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vedantra.ai - Interactive Front Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<!-- <div id="intro-overlay">
+  <!-- <div id="intro-overlay">
   <div id="vanta-bg"></div>
   <h1 class="intro-title">Vedantra.ai</h1>
 </div> -->
 
-<div class="main">
-  <header>  
-   <nav>
+  <div class="main">
+    <div class="landing-Page">
+        <header>
+          <nav>
     <div class="logo">
-      <img src="Veda traip.png" alt="Vedantra.ai Logo">
+      <img src="assets/vedan.png" alt="Logo">
     </div>
+
     <div class="nav-links">
       <a href="#">HOME</a>
+      <a href="about.html">ABOUT US</a>
       <div class="dropdown">
-        <a href="#">OUR SERVICES <i class="ri-arrow-drop-down-line"></i></a>
+        <a href="#">SERVICES ▼</a>
         <div class="dropdown-content">
-          <a href="service_web_dev.html">Web Development</a>
-          <a href="service_app_dev.html">App Development</a>
-          <a href="service_ui_ux.html">UI/UX Design</a>
-          <a href="service_maintanance_support.html">Maintanance and Support</a>
-          
+          <a href="#">Service 1</a>
+          <a href="#">Service 2</a>
+          <a href="#">Service 3</a>
+          <a href="#">Service 4</a>
         </div>
       </div>
       <a href="#">PORTFOLIO</a>
-      <a href="#">CONTACT US </a>
-    </div>
-    <!-- <div class="hamburger" onclick="toggleMenu()">☰</div> -->
-  </nav>
-
-  <div class="navbar">
-<!--     
-    <div class="hamburger" id="hamburger" onclick="openSidebar()">
-      <i class="fas fa-bars"></i>
-    </div>
-  </div>
-
-  <div class="sidebar" id="sidebar"> -->
-    <!-- Close icon inside sidebar -->
-    <!-- <div class="close-icon" onclick="closeSidebar()">
-      <i class="fas fa-times"></i>
+      <a href="#">CONTACT US</a>
     </div>
 
-    <a href="#">Home</a>
-
-    <div class="services-toggle" onclick="toggleDropdown()">
-      Services <i id="arrow" class="fas fa-chevron-down"></i>
+    <div class="hamburger" id="hamburger">
+      <i class="ri-menu-line"></i>
     </div>
-    <div class="dropdown" id="servicesDropdown">
-      <a href="#">Web Development</a>
-      <a href="#">App Development</a>
-      <a href="#">SEO</a>
-      <a href="#">Graphic Design</a>
-    </div>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact Us</a>
-  </div> -->
+        </nav>
+        </header>
 
-  <div class="hamburger" id="hamburger">
-    <i class="fas fa-bars"></i>
-  </div>
-
-  <!-- Sidebar -->
   <div class="sidebar" id="sidebar">
-    <!-- <div class="close-btn" id="closeBtn"><i class="fas fa-times"></i></div> -->
-    <ul>
-      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#"><i class="fas fa-cogs"></i> Services</a></li>
-      <li><a href="#"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-      <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
-  </div>
-</header>
+    <a href="#">HOME</a>
+    <a href="about.html">ABOUT US</a>
 
-<section class="hero">
-  <video autoplay muted loop playsinline>
-    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <div class="hero-content">
-    <h1>From Concepts to Code — We Build What Matters</h1>
-    <p>Crafting standout websites and apps that help you launch, grow, and scale. Your vision meets our code.</p>
-    <a href="#contact" class="cta-button">Let's Talk</a>
-  </div>
-</section>
-
-<!-- Service Section -->
-
- <section class="services-section">
-    <h3>Our Services</h3>
-    <div class="services-container">
-      <div class="service-box">
-        <img src="icons/marketing.png" alt="Marketing Icon" />
-        <h3><a href="service_web_dev.html">Web Design & Development</a></h3>
-        <p>We craft responsive, user-friendly websites that look great on all devices and deliver real results. Whether you need a personal site, business platform, or e-commerce store, we build solutions that reflect your brand and engage your audience.</p>
-        <a href="#" style="color: #ccc;">Learn More ⤴</a>
-      </div>
-
-      <div class="service-box">
-        <img src="icons/development.png" alt="Development Icon" />
-        <h3>E-commerce Development</h3>
-        <p>We use innovative techniques to build PHP applications and solutions for all types of business. We provide development solutions as per the client’s needs and goals.</p>
-        <a href="#" style="color: #ccc;">Learn More ⤴</a>
-      </div>
-
-      <div class="service-box">
-        <img src="icons/web-design.png" alt="Web Design Icon" />
-        <h3><a href="service_ui_ux.html">UI/UX Design</a></h3>
-        <p>We use different techniques to make a website user-friendly and attractive, so that your business is visible on the Internet more efficiently.</p>
-        <a href="#" style="color: #ccc;">Learn More ⤴</a>
-      </div>
-
-      <div class="service-box">
-        <img src="icons/seo.png" alt="SEO Icon" />
-        <h3><a href="service_maintanance_support.html">Website Maintenance & Support</a></h3>
-        <p>Optimize your website for better search engine visibility with our tailored SEO strategies.</p>
-       <a href="#" style="color: #ccc;">Learn More ⤴</a>
-      </div>
-
-      <div class="service-box">
-        <img src="icons/ads.png" alt="Ads Icon" />
-        <h3>SEO (Search Engine Optimization)</h3>
-        <p>Boost your brand visibility and sales through result-driven PPC advertising campaigns.</p>
-        <a href="#" style="color: #ccc;">Learn More ⤴</a>
-      </div>
-
-      <div class="service-box">
-        <img src="icons/branding.png" alt="Branding Icon" />
-        <h3>Web Hosting & Domain Services</h3>
-        <p>Establish a strong brand identity that resonates with your audience and builds trust.</p>
-        <a href="#" style="color: #ccc;">Learn More ⤴</a>
-      </div>
+    <div class="services-toggle" onclick="toggleServices()">
+      <span>SERVICES</span>
+      <span id="toggle-icon">+</span>
     </div>
-  </section>
-
-
-
-  <!--   Who We Serve  -->
-
-   <section class="serve-section">
-    <h3>Who We Serve</h3>
-    <p class="subtext">From startups to enterprises — we serve businesses of all kinds.</p>
-
-    <div class="serve-container">
-      <div class="serve-box">
-        <img src="icons/education.png" alt="Educational Icon">
-        <h3>Educational</h3>
-      </div>
-
-      <div class="serve-box">
-        <img src="icons/healthcare.png" alt="Healthcare Icon">
-        <h3>Healthcare</h3>
-      </div>
-
-      <div class="serve-box">
-        <img src="icons/ecommerce.png" alt="E-Commerce Icon">
-        <h3>E-Commerce</h3>
-      </div>
-
-      <div class="serve-box">
-        <img src="icons/travel.png" alt="Travel Icon">
-        <h3>Travel</h3>
-      </div>
-
-      <div class="serve-box">
-        <img src="icons/real-estate.png" alt="Real Estate Icon">
-        <h3>Real Estate</h3>
-      </div>
-
-      <div class="serve-box">
-        <img src="icons/fitness.png" alt="Fitness Icon">
-        <h3>Fitness</h3>
-      </div>
-
-      <div class="serve-box">
-        <img src="icons/food.png" alt="Food Icon">
-        <h3>Food</h3>
-      </div>
-
-      <div class="serve-box">
-        <img src="icons/finance.png" alt="Finance Icon">
-        <h3>Finance & Insurance</h3>
-      </div>
-
-      <div class="serve-box">
-        <img src="icons/automotive.png" alt="Automotive Icon">
-        <h3>Automotive</h3>
-      </div>
-
-      <div class="serve-box">
-        <img src="icons/construction.png" alt="Construction Icon">
-        <h3>Construction</h3>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
- <section class="work-section">
-    <h3>How we Work</h3>
-    <div class="work-steps">
-      <div class="step-box">
-        <div class="step-icon">
-          <img src="icons/tea.png" alt="Step 1 Icon">
-        </div>
-        <h3>Step 1</h3>
-        <p class="subtitle">You Spill the Tea, We Bring the Strategy!</p>
-        <p class="desc">
-          Tell us what you need—website, SEO, viral fame? We listen like gossip-loving besties and get straight to work.
-        </p>
-      </div>
-
-      <div class="step-box">
-        <div class="step-icon">
-          <img src="icons/masala.png" alt="Step 2 Icon">
-        </div>
-        <h3>Step 2</h3>
-        <p class="subtitle">We Cook Up Some Marketing Masala!</p>
-        <p class="desc">
-          Our AI + creative squad mixes spicy strategies, sizzling designs, and a secret sauce (nope, we won’t tell you what’s in it).
-        </p>
-      </div>
-
-      <div class="step-box">
-        <div class="step-icon">
-          <img src="icons/boom.png" alt="Step 3 Icon">
-        </div>
-        <h3>Step 3</h3>
-        <p class="subtitle">Boom! We Set the Internet on Fire!</p>
-        <p class="desc">
-          Your project goes live—fast, smooth, and packed with results.
-        </p>
-      </div>
-    </div>
-  </section>
-
- <section class="cta-section">
-    <div class="cta-container">
-      <h2>
-        Let’s discuss make <br />
-        something <em>cool</em>   together
-      </h2>
-      <a href="#" class="cta-button">Request Quote <span>✈</span></a>
-    </div>
-  </section>
-
-   <section class="scroller-section">
-    <div class="scroller-wrapper">
-      <div class="scroller">
-        <span>SEO, SMM, PPC, Video Editing, Branding, Web Design, Development, Marketing, </span>
-        <span>SEO, SMM, PPC, Video Editing, Branding, Web Design, Development, Marketing, </span>
-      </div>
-    </div>
-  </section>
-
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-col">
-      <h3>Blogs</h3>
-      <p>Professional Graphic Design Services in Panipat: Build a Brand That Stands Out in 2025</p>
-      <p>Top SEO Services in Yamuna Nagar: Boost Your Local Business Online</p>
+    <div class="sub-services" id="subServices">
+      <a href="#">Service 1</a>
+      <a href="#">Service 2</a>
+      <a href="#">Service 3</a>
+      <a href="#">Service 4</a>
     </div>
 
-    <div class="footer-col">
-      <h3>Services</h3>
-      <ul>
-        <li>UI/UX design</li>
-        <li>Web Development</li>
-        <li>Digital marketing</li>
-        <li>Video Editing</li>
-        <li>Career</li>
-      </ul>
-    </div>
-
-    <div class="footer-col contact">
-      <h3>Contact Us</h3>
-      <p>📞 +91-8816081309</p>
-      <p>📧 hello@digitalcreativeminds.com</p>
-      <p>📍 Sco 112-113 4th floor, Sector 34-A, Chandigarh 160022</p>
-    </div>
-
-    <div class="footer-col subscribe">
-      <h3>Keep up with us.</h3>
-      <form>
-        <div class="input-wrapper">
-          <input type="email" placeholder="Your Email" />
-          <button type="submit">Subscribe</button>
-        </div>
-        <p>Join our mailing list to receive news and announcements.</p>
-      </form>
-    </div>
+    <a href="#">PORTFOLIO</a>
+    <a href="#">BLOGS</a>
+    <a href="#">FUNNY</a>
+    <a href="#">CONTACT US</a>
   </div>
 
-  <hr />
-
-  <div class="footer-bottom">
-    <p>Copyright © 2025 Vedantra.ai </p>
-    <div class="links">
-      <a href="#">Terms of Use</a>
-      <a href="#">Privacy policy</a>
-      <a href="#">Refund Policy</a>
+    <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <span class="badge">20% OFF Best Web Agency</span>
+      <h1>We’re <span style="color: #7B209A;">Vedantra.ai</span><br>Web Solutions<br>Agency</h1>
+      <p>Sit amet consectetur adipiscing elit Massa diam tincidunt. Nibh posuere aliquam et sit imperdiet sagittis tempus arcus nulla quis est a cursus sit quis nibh platea.</p>
+      <a href="#" class="hero-btn">Let's Talk &nbsp;≫</a>
     </div>
+    <div class="hero-image">
+      <img src="assets/hero/flat-cms-concept-illustration.png" alt="SEO Illustration">
+    </div>
+  </section>
+
+
+  
+    </div>
+
+
+    <!-- Service Section -->
+
+    <section class="services-section">
+      <h3>Our Services</h3>
+      <div class="services-container">
+        <div class="service-box">
+          <img src="assets/web.jpg " alt="Marketing Icon" />
+          <h3>Website Design & Development</h3>
+          <p>We craft responsive, user-friendly websites that look great on all devices and deliver real results.
+            Whether you need a personal site, business platform, or e-commerce store, we build solutions that reflect
+            your brand and engage your audience.</p>
+          <a href="#" style="color: #ccc;">Learn More ⤴</a>
+        </div>
+
+        <div class="service-box">
+          <img src="assets/E-commerce.jpg" alt="Development Icon" />
+          <h3>E-commerce Development</h3>
+          <p>We use innovative techniques to build PHP applications and solutions for all types of business. We provide
+            development solutions as per the client’s needs and goals.</p>
+          <a href="#" style="color: #ccc;">Learn More ⤴</a>
+        </div>
+
+        <div class="service-box">
+          <img src="assets/uiux.jpg" alt="Web Design Icon" />
+          <h3>UI/UX Design</h3>
+          <p>We use different techniques to make a website user-friendly and attractive, so that your business is
+            visible on the Internet more efficiently.</p>
+          <a href="#" style="color: #ccc;">Learn More ⤴</a>
+        </div>
+
+        <div class="service-box">
+          <img src="assets/Web_Maint.jpg" alt="SEO Icon" />
+          <h3>Website Maintenance & Support</h3>
+          <p>Optimize your website for better search engine visibility with our tailored SEO strategies.</p>
+          <a href="#" style="color: #ccc;">Learn More ⤴</a>
+        </div>
+
+        <div class="service-box">
+          <img src="assets/SEO.jpg" alt="Ads Icon" />
+          <h3>SEO (Search Engine Optimization)</h3>
+          <p>Boost your brand visibility and sales through result-driven PPC advertising campaigns.</p>
+          <a href="#" style="color: #ccc;">Learn More ⤴</a>
+        </div>
+
+        <div class="service-box">
+          <img src="assets/Web_host.jpg" alt="Branding Icon" />
+          <h3>Web Hosting & Domain Services</h3>
+          <p>Establish a strong brand identity that resonates with your audience and builds trust.</p>
+          <a href="#" style="color: #ccc;">Learn More ⤴</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--   Who We Serve  -->
+
+    <section class="serve-section">
+      <h3>Who We Serve</h3>
+      <p class="subtext">From startups to enterprises — we serve businesses of all kinds.</p>
+
+      <div class="serve-container">
+        <div class="serve-box">
+          <img src="assets/serve/open-book.png" alt="Educational Icon">
+          <h3>Educational</h3>
+        </div>
+
+        <div class="serve-box">
+          <img src="assets/serve/healthcare.png" alt="Healthcare Icon">
+          <h3>Healthcare</h3>
+        </div>
+
+        <div class="serve-box">
+          <img src="assets/serve/ecommerce.png" alt="E-Commerce Icon">
+          <h3>E-Commerce</h3>
+        </div>
+
+        <div class="serve-box">
+          <img src="assets/serve/flight-ticket.png" alt="Travel Icon">
+          <h3>Travel</h3>
+        </div>
+
+        <div class="serve-box">
+          <img src="assets/serve/house.png" alt="Real Estate Icon">
+          <h3>Real Estate</h3>
+        </div>
+
+        <div class="serve-box">
+          <img src="assets/serve/power.png" alt="Fitness Icon">
+          <h3>Fitness</h3>
+        </div>
+
+        <div class="serve-box">
+          <img src="assets/serve/burger.png" alt="Food Icon">
+          <h3>Food</h3>
+        </div>
+
+        <div class="serve-box">
+          <img src="assets/serve/insurance.png" alt="Finance Icon">
+          <h3>Finance & Insurance</h3>
+        </div>
+
+        <div class="serve-box">
+          <img src="assets/serve/vehicle.png" alt="Automotive Icon">
+          <h3>Automotive</h3>
+        </div>
+
+        <div class="serve-box">
+          <img src="assets/serve/construction.png" alt="Construction Icon">
+          <h3>Construction</h3>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="work-section">
+      <h3>How we Work</h3>
+      <div class="work-steps">
+        <div class="step-box">
+          <div class="step-icon">
+            <img src="icons/tea.png" alt="Step 1 Icon">
+          </div>
+          <h3>Step 1</h3>
+          <p class="subtitle">You Spill the Tea, We Bring the Strategy!</p>
+          <p class="desc">
+            Tell us what you need—website, SEO, viral fame? We listen like gossip-loving besties and get straight to
+            work.
+          </p>
+        </div>
+
+        <div class="step-box">
+          <div class="step-icon">
+            <img src="icons/masala.png" alt="Step 2 Icon">
+          </div>
+          <h3>Step 2</h3>
+          <p class="subtitle">We Cook Up Some Marketing Masala!</p>
+          <p class="desc">
+            Our AI + creative squad mixes spicy strategies, sizzling designs, and a secret sauce (nope, we won’t tell
+            you what’s in it).
+          </p>
+        </div>
+
+        <div class="step-box">
+          <div class="step-icon">
+            <img src="icons/boom.png" alt="Step 3 Icon">
+          </div>
+          <h3>Step 3</h3>
+          <p class="subtitle">Boom! We Set the Internet on Fire!</p>
+          <p class="desc">
+            Your project goes live—fast, smooth, and packed with results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-container">
+        <h2>
+          Let’s discuss make <br />
+          something <em>cool</em> together
+        </h2>
+        <a href="#" class="cta-button">Request Quote <span>✈</span></a>
+      </div>
+    </section>
+
+    <section class="scroller-section">
+      <div class="scroller-wrapper">
+        <div class="scroller">
+          <span>SEO, SMM, PPC, Video Editing, Branding, Web Design, Development, Marketing, </span>
+          <span>SEO, SMM, PPC, Video Editing, Branding, Web Design, Development, Marketing, </span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-col">
+          <h3>Blogs</h3>
+          <p>Professional Graphic Design Services in Panipat: Build a Brand That Stands Out in 2025</p>
+          <p>Top SEO Services in Yamuna Nagar: Boost Your Local Business Online</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li>UI/UX design</li>
+            <li>Web Development</li>
+            <li>Digital marketing</li>
+            <li>Video Editing</li>
+            <li>Career</li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact">
+          <h3>Contact Us</h3>
+          <p>📞 +91-8816081309</p>
+          <p>📧 hello@digitalcreativeminds.com</p>
+          <p>📍 Sco 112-113 4th floor, Sector 34-A, Chandigarh 160022</p>
+        </div>
+
+        <div class="footer-col subscribe">
+          <h3>Keep up with us.</h3>
+          <form>
+            <div class="input-wrapper">
+              <input type="email" placeholder="Your Email" />
+              <button type="submit">Subscribe</button>
+            </div>
+            <p>Join our mailing list to receive news and announcements.</p>
+          </form>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <p>Copyright © 2025 Vedantra.ai </p>
+        <div class="links">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </footer>
+
+
   </div>
-</footer>
-
-
-</div>
 
 
 
@@ -333,12 +327,13 @@
 
 
 
-<!-- VANTA + THREE.JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+  <!-- VANTA + THREE.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
 
-<script src="script.js
+  <script src="script.js
 "></script>
 
 </body>
+
 </html>
