@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Remix Icon -->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./about.css">
-    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <div class="main">
@@ -86,24 +88,25 @@
     </div>
 
     <div class="contact-right">
-      <form class="contact-form">
-        <div class="form-group">
-          <input type="text" placeholder="Full Name*" required />
-          <input type="email" placeholder="Email*" required />
-        </div>
-        <div class="form-group">
-          <select required>
-            <option value="">—Please choose an option—</option>
-            <option>Website Development</option>
-            <option>SEO Services</option>
-            <option>Social Media Marketing</option>
-            <option>Graphic Design</option>
-          </select>
-          <input type="tel" placeholder="Mobile*" required />
-        </div>
-        <textarea rows="6" placeholder="Write Project Details*" required></textarea>
-        <button type="submit">Send Message →</button>
-      </form>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Full Name*" required />
+                <input type="email" name="email" placeholder="Email*" required />
+            </div>
+            <div class="form-group">
+                <select name="service" required>
+                    <option value="">—Please choose an option—</option>
+                    <option>Website Development</option>
+                    <option>SEO Services</option>
+                    <option>Social Media Marketing</option>
+                    <option>Graphic Design</option>
+                </select>
+                <input type="tel" name="phone" placeholder="Mobile*" required />
+            </div>
+            <textarea rows="6" name="message" placeholder="Write Project Details*" required></textarea>
+            <button type="submit">Send Message →</button>
+        </form>
+
     </div>
 
   </div>
@@ -173,6 +176,117 @@
 </script>
 
     <script src="contact.js"></script>
-    
+    <script>
+        const contactForm = document.querySelector(".contact-form");
+        const overlay = document.getElementById("overlay");
+        const overlayMessage = document.getElementById("overlayMessage");
+
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault(); // prevent default form submit
+
+            // 1. Get values
+            const name = this.querySelector('input[placeholder="Full Name*"]').value;
+            const email = this.querySelector('input[placeholder="Email*"]').value;
+            const mobile = this.querySelector('input[placeholder="Mobile*"]').value;
+            const service = this.querySelector("select").value;
+            const message = this.querySelector("textarea").value;
+
+            // 2. Show loading overlay
+            overlay.classList.add("active");
+            overlayMessage.textContent = "Sending your message...";
+
+            // 3. Send data to backend
+            fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    phone: mobile,
+                    message: message,
+                    service: service,
+                }),
+            })
+                .then((res) => {
+                    if (!res.ok) throw new Error("Failed to send");
+                    return res.json();
+                })
+                .then(() => {
+                    overlayMessage.textContent = "Message sent successfully!";
+                    setTimeout(() => overlay.classList.remove("active"), 2500);
+                })
+                .catch(() => {
+                    overlayMessage.textContent = "Something went wrong!";
+                    setTimeout(() => overlay.classList.remove("active"), 2500);
+                });
+        });
+    </script>
+
+
+
+    <!-- Message Overlay -->
+    <!-- Stylish Message Overlay -->
+    <!-- Updated Stylish Overlay with Icon & Sparkles -->
+    <!-- Overlay Message Loader -->
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const contactForm = document.querySelector(".contact-form");
+            const overlay = document.getElementById("overlay");
+            const overlayMessage = document.getElementById("overlayMessage");
+
+            contactForm.addEventListener("submit", async function (e) {
+                e.preventDefault();
+
+                const name = this.querySelector('input[placeholder="Full Name*"]').value;
+                const email = this.querySelector('input[placeholder="Email*"]').value;
+                const phone = this.querySelector('input[placeholder="Mobile*"]').value;
+                const service = this.querySelector("select").value;
+                const message = this.querySelector("textarea").value;
+
+                // Show animated overlay
+                overlay.classList.add("active");
+                overlayMessage.textContent = "Sending your message...";
+
+                try {
+                    const res = await fetch("/api/contact", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ name, email, phone, service, message })
+                    });
+
+                    if (res.ok) {
+                        overlayMessage.textContent = "✅ Message Sent Successfully!";
+                    } else {
+                        overlayMessage.textContent = "⚠️ Failed to send message.";
+                    }
+                } catch (err) {
+                    overlayMessage.textContent = "❌ Server Error!";
+                }
+
+                // Hide overlay after a short delay
+                setTimeout(() => overlay.classList.remove("active"), 2500);
+            });
+        });
+    </script>
+
+
+
+
+    <div class="custom-overlay" id="overlay">
+        <div class="glass-message">
+            <div class="loader-icon">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <div id="overlayMessage">Sending your message...</div>
+            <div class="sparkles"></div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
