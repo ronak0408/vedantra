@@ -411,8 +411,61 @@ button:hover {
     margin-right: 15px;
   }
 }
+/* Overlay Container */
+.custom-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(100,0,150,0.3), rgba(255,0,255,0.1));
+  backdrop-filter: blur(12px);
+  display: none; /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  flex-direction: column;
+}
 
+/* Show overlay with active class */
+.custom-overlay.active {
+  display: flex;
+}
 
-/*              */
+/* Inner message container */
+.glass-message {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+  text-align: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 1;
+}
 
- 
+/* Spinner icon */
+.loader-icon i {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: #ff69f2;
+}
+
+/* Sparkle effect behind glass */
+.sparkles {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: sparkleAnim 4s linear infinite;
+  z-index: 0;
+}
+
+/* Sparkle animation */
+@keyframes sparkleAnim {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
+}
