@@ -562,7 +562,7 @@ nav {
   background-color: #0b001a;
 }
 
-.footer-top {
+.footer-top { 
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -571,6 +571,7 @@ nav {
 
 .footer-col {
   flex: 1 1 220px;
+  cursor: pointer;
 }
 
 .footer-col h3 {
@@ -585,6 +586,18 @@ nav {
   font-size: 0.95rem;
   margin-bottom: 10px;
   line-height: 1.4;
+  text-decoration: none;
+}
+
+.footer-col p,
+.footer-col a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+
+.footer-col a:hover {
+  color: #F94EF7;
 }
 
 .footer-col ul {
@@ -663,8 +676,3 @@ nav {
     margin-right: 15px;
   }
 }
-
-
-/*              */
-
- 
