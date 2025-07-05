@@ -30,6 +30,51 @@ html {
     .main {
       overflow: hidden;
     }
+
+
+
+      /* Loader Styles */
+    #loader {
+      background-color: #0d001a;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 1s ease;
+    }
+
+    #loader img {
+      width: 200px;
+      opacity: 0;
+      transform: scale(0.7);
+      animation: fadeInZoom 2s ease forwards;
+    }
+
+    @keyframes fadeInZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Main Content (Hidden Initially) */
+    #content {
+      display: none;
+      padding: 40px;
+      background-color: #fff;
+      min-height: 100vh;
+      color: #000;
+    }
+
     
 
 nav {
@@ -421,6 +466,7 @@ nav {
   max-width: 330px;
   box-shadow: 0 0 10px rgba(255, 72, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 400px;
 }
 
 .service-box:hover {
@@ -911,6 +957,7 @@ nav {
 
 .footer-col {
   flex: 1 1 220px;
+  cursor: pointer;
 }
 
 .footer-col h3 {
@@ -925,6 +972,18 @@ nav {
   font-size: 0.95rem;
   margin-bottom: 10px;
   line-height: 1.4;
+  text-decoration: none;
+}
+
+.footer-col p,
+.footer-col a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+
+.footer-col a:hover {
+  color: #F94EF7;
 }
 
 .footer-col ul {
