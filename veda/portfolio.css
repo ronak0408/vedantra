@@ -397,6 +397,7 @@ nav {
 
 .footer-col {
   flex: 1 1 220px;
+  cursor: pointer;
 }
 
 .footer-col h3 {
@@ -411,6 +412,18 @@ nav {
   font-size: 0.95rem;
   margin-bottom: 10px;
   line-height: 1.4;
+  text-decoration: none;
+}
+
+.footer-col p,
+.footer-col a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+
+.footer-col a:hover {
+  color: #F94EF7;
 }
 
 .footer-col ul {
@@ -488,18 +501,4 @@ nav {
     margin-left: 0;
     margin-right: 15px;
   }
-}
-
-
-/*              */
-
- .hero-content,
-.hero-image img,
-.card,
-.service-box,
-.serve-box,
-.step-box,
-.cta-container,
-.footer-col {
-  will-change: transform, opacity;
 }
