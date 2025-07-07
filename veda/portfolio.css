@@ -16,13 +16,15 @@
     }
     
 
+
 nav {
   background-color: #130036;
   color: white;
   display: flex;
   align-items: center;
+  height: 100px;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding:  40px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -34,11 +36,16 @@ nav {
     .logo {
       display: flex;
       align-items: center;
+      height: 100px;
+      width: 130px;
     }
 
     .logo img {
-      height: 60px;
+      height: 180px;
       margin-right: 10px;
+      object-fit: cover;
+      width: 180px;
+      object-fit: cover;
     }
 
     .nav-links {
