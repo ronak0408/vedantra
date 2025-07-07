@@ -9,9 +9,9 @@ html {
 } */
 
 
-.landing-Page {
+/* .landing-Page {
  /* min-height: 100vh; */
-}
+
 
 
     * {
@@ -49,7 +49,8 @@ html {
     }
 
     #loader img {
-      width: 200px;
+      height: 300px;
+      width: 500px;
       opacity: 0;
       transform: scale(0.7);
       animation: fadeInZoom 2s ease forwards;
@@ -82,8 +83,9 @@ nav {
   color: white;
   display: flex;
   align-items: center;
+  height: 100px;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding:  40px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -95,11 +97,16 @@ nav {
     .logo {
       display: flex;
       align-items: center;
+      height: 100px;
+      width: 130px;
     }
 
     .logo img {
-      height: 60px;
+      height: 180px;
       margin-right: 10px;
+      object-fit: cover;
+      width: 180px;
+      object-fit: cover;
     }
 
     .nav-links {
@@ -244,7 +251,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0px 40px 80px 80px;
+  padding: 40px 40px 80px 80px;
   /* background: linear-gradient(to right, #d0f0c0, #fddde6); */
   background-color: #0b001a;
   flex-wrap: wrap;
@@ -1075,4 +1082,76 @@ nav {
 .cta-container,
 .footer-col {
   will-change: transform, opacity;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #0B021B;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  color: #E940CE;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: #ccc;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.contact-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 700px;
+  background-color: #1C0F30;
+  border: 1px solid #772DFF;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.contact-table th {
+  color: #E940CE;
+  width: 120px;
+  background-color: #25163F;
+  vertical-align: top;
+}
+
+.contact-table tr:not(:last-child) {
+  border-bottom: 1px solid #772DFF;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact-table th,
+  .contact-table td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .contact-table th {
+    margin-top: 15px;
+  }
+
+  .contact-table td {
+    margin-bottom: 15px;
+  }
+
+  .contact-table tr {
+    display: block;
+    border-bottom: none;
+  }
 }
