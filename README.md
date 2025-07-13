@@ -1,57 +1,67 @@
-<h1 align="center">🌐 VEDANTRA.AI — Your Digital Success Partner 🚀</h1>
+# 💻 Vedantra AI 🌐  
+*A Service-Based Website Providing High-Quality Web & Digital Solutions*
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Tech-SpringBoot%20%7C%20HTML%20%7C%20CSS%20%7C%20JS-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Contact-Form%20System-lightgrey?style=for-the-badge" />
-</p>
+🚀 **Vedantra AI** is a modern Spring Boot-based full-stack project offering various tech services like Web Development, App Development, SEO, Social Media Marketing, and more.
 
----
-
-## ✨ What is Vedantra.ai?
-
-**Vedantra.ai** is a modern, stylish, and responsive web platform designed for businesses looking to grow online.  
-It’s a fully functional contact-based website built with **Spring Boot** & **HTML/CSS/JavaScript** that offers:
-
-🔹 Stunning Frontend Design  
-🔹 Email Integration (Client + Admin Notifications)  
-🔹 No Database Dependency  
-🔹 Custom Animation on Submit  
-🔹 Professional & Scalable UI  
+✨ This website features a user-friendly contact form with backend logic to send email confirmations to clients and admin teams instantly.
 
 ---
 
-## 🚀 Core Services Offered by Vedantra
+## 🛠️ Built With
 
-📱 **App Development**  
-🖥️ **Web Development**  
-📈 **SEO Optimization**  
-🎨 **UI/UX & Graphic Design**  
-📢 **Social Media Marketing**  
-🔧 **Maintenance & Support**  
-
-> _“We don't just build websites — we build digital experiences that convert.”_
+- ⚙️ **Spring Boot (Java 17)**
+- 💌 **JavaMailSender for Email Functionality**
+- 🎨 **HTML + CSS + JavaScript Frontend**
+- 🧠 **Clean MVC Architecture**
+- 🧰 **Maven for Dependency Management**
 
 ---
 
-## 🧰 Tech Stack
+---
 
-| Layer      | Technologies                        |
-|------------|-------------------------------------|
-| 💻 Backend | Spring Boot (Java), JavaMailSender  |
-| 🎨 Frontend| HTML5, CSS3, JavaScript, GSAP       |
-| ✉️ Mailing | SMTP (App Password Auth)            |
-| 🎯 Hosting | Compatible with Hostinger, Netlify, Vercel |
+## ▶️ How to Run the Project
+
+> You can run this Spring Boot project using **IntelliJ IDEA (Ultimate or Community)**, **Eclipse**, **Spring Tool Suite (STS)**, or **VS Code**.
+
+### 🔧 Steps:
+
+1. 📁 **Clone or download** the project.
+2. 🔥 Open it in your preferred IDE (IntelliJ is recommended).
+3. 🚀 Navigate to:  
+src/main/java/com/project/vedantra/vedantra_ai/VedantraAiApplication.java
+
+4. ✅ **Right-click & Run** this main file (or click the green run button).
+5. 🌍 Open your browser and test the endpoint:
+http://localhost:8080/
 
 ---
-## 🔍 How the Contact Form Works
 
-1. ✅ User submits their name, email, phone, service type & project idea.
-2. 📬 They instantly receive a **confirmation email**.
-3. 📥 Admin gets notified with all submitted details.
-4. 🎉 Stylish overlay animation confirms success to the user.
+## 📬 Features
 
-No database is used — everything is lightweight and email-driven!
+- ✅ Client and Admin email functionality using JavaMailSender.
+- ✅ Stylish animated contact form with overlay success/failure messages.
+- ✅ Clean and readable code structure.
+- ✅ Fully responsive frontend.
 
 ---
+
+## 🧠 Inspiration
+
+> *"A brand’s digital presence is only as powerful as the experience it delivers."*
+
+At **Vedantra AI**, we aim to make businesses look smart, professional, and conversion-ready. This project reflects that vision with modern tools and a professional look.
+
+---
+
+## 🤝 Let's Connect!
+
+If you like this project or want to collaborate, feel free to reach out:
+
+📧 **hello@digitalcreativeminds.com**  
+📞 **+91 8816081309**  
+🌐 [Vedantra AI](http://vedantra.ai)
+
+---
+
+> 💡 _Empowering your brand with code and creativity_ 🌟
 
