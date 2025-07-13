@@ -67,15 +67,15 @@ No database is used — everything is lightweight and email-driven!
 ## 📁 Folder Structure
 vedantra-ai/
 ├── src/
-│ └── main/
-│ ├── java/com/project/vedantra/
-│ │ ├── controller/ → Handles contact endpoint
-│ │ ├── service/ → Sends email to client & admin
-│ │ └── model/ → ContactMessage DTO
-│ └── resources/
-│ └── application.properties
-├── static/
-│ ├── contact.html → Main contact form UI
-│ ├── assets/ → Images, icons, CSS, JS
-└── README.md
-
+│   └── main/
+│       ├── java/
+│       │   └── com/project/vedantra/
+│       │       ├── controller/         # Handles API endpoints
+│       │       ├── service/            # Email sending logic
+│       │       └── model/              # ContactMessage DTO
+│       └── resources/
+│           ├── application.properties  # SMTP config
+│           └── static/                 # HTML, CSS, JS
+├── .gitignore
+├── pom.xml                            # Maven dependencies
+├── README.md
