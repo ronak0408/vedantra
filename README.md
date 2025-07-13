@@ -58,7 +58,7 @@ At **Vedantra AI**, we aim to make businesses look smart, professional, and conv
 If you like this project or want to collaborate, feel free to reach out:
 
 📧 **Vedantraai@gmail.com**  
-📞 ** +91-7289966310**  
+📞 **+91-7289966310**  
 🌐 [Vedantra AI](http://vedantraai.com)
 
 ---
