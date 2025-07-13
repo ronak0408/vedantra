@@ -1,40 +1,68 @@
-<h1 align="center">🌐 VEDANTRA.AI — Digital Web Solutions Hub 🚀</h1>
+<h1 align="center">🌐 VEDANTRA.AI — Your Digital Success Partner 🚀</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square" />
-  <img src="https://img.shields.io/badge/Tech%20Stack-SpringBoot%20%7C%20HTML%2FCSS%2FJS%20%7C%20SMTP-blueviolet?style=flat-square" />
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Tech-SpringBoot%20%7C%20HTML%20%7C%20CSS%20%7C%20JS-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Contact-Form%20System-lightgrey?style=for-the-badge" />
 </p>
 
 ---
 
-## ✨ About the Project
+## ✨ What is Vedantra.ai?
 
-Welcome to **Vedantra.ai**, a powerful and modern website built to help businesses thrive in the digital age!  
-This project is a **Spring Boot + HTML/CSS/JS-based** contact-driven site for a digital agency providing:
+**Vedantra.ai** is a modern, stylish, and responsive web platform designed for businesses looking to grow online.  
+It’s a fully functional contact-based website built with **Spring Boot** & **HTML/CSS/JavaScript** that offers:
 
-- 🖥️ **Web Development**
-- 📱 **App Development**
-- 🎯 **SEO Services**
-- 📊 **Social Media Marketing**
-- 🎨 **Graphic Design**
-- 🛠️ **Maintenance & Support**
-
-> Built to be responsive, aesthetic, and fully functional — backed with email notification functionality 📧
+🔹 Stunning Frontend Design  
+🔹 Email Integration (Client + Admin Notifications)  
+🔹 No Database Dependency  
+🔹 Custom Animation on Submit  
+🔹 Professional & Scalable UI  
 
 ---
 
-## 🚀 Features
+## 🚀 Core Services Offered by Vedantra
 
-✅ Beautiful, responsive design  
-✅ Contact form with live validation  
-✅ Confirmation email to users 💌  
-✅ Admin notification mail 💼  
-✅ HTML email templates  
-✅ Overlay animation on form submission ✨  
-✅ Clean and modular backend with **Spring Boot**  
-✅ Easy-to-maintain codebase
+📱 **App Development**  
+🖥️ **Web Development**  
+📈 **SEO Optimization**  
+🎨 **UI/UX & Graphic Design**  
+📢 **Social Media Marketing**  
+🔧 **Maintenance & Support**  
+
+> _“We don't just build websites — we build digital experiences that convert.”_
 
 ---
 
-## 📁 Project Structure
+## 🧰 Tech Stack
+
+| Layer      | Technologies                        |
+|------------|-------------------------------------|
+| 💻 Backend | Spring Boot (Java), JavaMailSender  |
+| 🎨 Frontend| HTML5, CSS3, JavaScript, GSAP       |
+| ✉️ Mailing | SMTP (App Password Auth)            |
+| 🎯 Hosting | Compatible with Hostinger, Netlify, Vercel |
+
+---
+
+## 🖼️ UI Preview
+
+> _You can upload screenshots here using the `assets/` folder_  
+> Example:  
+> ![UI Preview](assets/screenshots/contact-preview.png)
+
+---
+
+## 🔍 How the Contact Form Works
+
+1. ✅ User submits their name, email, phone, service type & project idea.
+2. 📬 They instantly receive a **confirmation email**.
+3. 📥 Admin gets notified with all submitted details.
+4. 🎉 Stylish overlay animation confirms success to the user.
+
+No database is used — everything is lightweight and email-driven!
+
+---
+
+## 📁 Folder Structure
 
