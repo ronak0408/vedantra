@@ -58,8 +58,8 @@ At **Vedantra AI**, we aim to make businesses look smart, professional, and conv
 If you like this project or want to collaborate, feel free to reach out:
 
 📧 **hello@digitalcreativeminds.com**  
-📞 **+91 8816081309**  
-🌐 [Vedantra AI](http://vedantra.ai)
+📞 ** +91-7289966310**  
+🌐 [Vedantra AI](http://vedantraai.com)
 
 ---
 
