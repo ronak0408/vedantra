@@ -79,3 +79,17 @@ gsap.from(".cta-section .cta-container", {
   duration: 1,
   ease: "power2.out",
 });
+
+
+  // Footer
+  gsap.from(".footer-col", {
+    scrollTrigger: {
+      trigger: ".footer-top",
+      start: "top 95%",
+    },
+    opacity: 0,
+    y: 40,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out"
+  });
