@@ -1,20 +1,36 @@
-# Use Java 24 base image
-FROM eclipse-temurin:24-jdk
+# Use base image with Java 24 and Maven pre-installed
+FROM maven:3.9.6-eclipse-temurin-24
 
-# Set working directory inside the container
+# Set working directory
 WORKDIR /app
 
-# Copy all files from your project directory into the container
-COPY . .
+# Copy pom and source files
+COPY pom.xml .
+COPY src ./src
 
-# Make the Maven wrapper executable
-RUN chmod +x mvnw
+# Build the application
+RUN mvn clean package -DskipTests
 
-# Build the project (skip tests to speed up)
-RUN ./mvnw package -DskipTests
-
-# Expose default Spring Boot port
+# Expose port (Render will override with $PORT)
 EXPOSE 8080
 
-# Run the built JAR file
+# Run the application
+CMD ["sh", "-c", "java -jar target/*.jar"]
+# Use base image with Java 24 and Maven pre-installed
+FROM maven:3.9.6-eclipse-temurin-24
+
+# Set working directory
+WORKDIR /app
+
+# Copy pom and source files
+COPY pom.xml .
+COPY src ./src
+
+# Build the application
+RUN mvn clean package -DskipTests
+
+# Expose port (Render will override with $PORT)
+EXPOSE 8080
+
+# Run the application
 CMD ["sh", "-c", "java -jar target/*.jar"]
